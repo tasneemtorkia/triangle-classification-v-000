@@ -18,10 +18,12 @@ class Triangle
       if (@l1 == @l2) && (@l2 == @l3)
         :equilateral
         
-      elsif (@l1 == @l2) || (@l2 == @l3) || (@side_1 == @side_3)
+      elsif (@l1 == @l2) || (@l2 == @l3) || (@l1 == @l3)
         :isosceles
-      elsif (@side_1 != @side_2) && (@side_2 != @side_3) && (@side_1 != @side_3)
+        
+      elsif (@l1 != @l2) && (@l2 != @l3) && (@l1 != @l3)
         :scalene
+        
       end
     end
 
